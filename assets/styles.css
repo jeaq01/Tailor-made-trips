@@ -1,0 +1,35 @@
+.section {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 100;
+}   
+
+.section h1{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+}
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
