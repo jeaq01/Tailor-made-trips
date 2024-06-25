@@ -1,4 +1,5 @@
 .section {
+    
     display: grid;
     justify-content: space-around;
     align-items: center;
@@ -32,17 +33,5 @@ video {
     background: #1c1c1d;
     opacity: 0.2;
     mix-blend-mode: overlay;
-    z-index: -1;
 }
 
-.label {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-}
-
-.field {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-}
