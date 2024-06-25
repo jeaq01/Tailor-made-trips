@@ -8,8 +8,7 @@ const favoriteList = document.getElementById("favorite-list");
 
 // switch to the options page, either on profile or settings
 function changePage() {
-    console.log("HELP")
-    history.back();
+    document.location.replace("Index.html");
 }
 
 cancelBtn.addEventListener("click", changePage);
