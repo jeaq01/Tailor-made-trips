@@ -8,15 +8,64 @@
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Tailor made trips
-      </h1>
-      <div class="box">Enter your destination here.</div>
-     </div>
-     <video src="./assets/185841-876533119_small.mp4" muted autoplay loop alt="a video of the sea"></video>
-     <div class="cover"></div>
-  </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Tailor made trips</h1>
+        <div class="box">Enter your destination here.</div>
+        
+        <div class="field">
+          <label class="label">Convert From</label>
+          <div class="control">
+            <div class="select">
+              <select id="convert-from">
+                <option value="USD">USD - United States Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound Sterling</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Convert To</label>
+          <div class="control">
+            <div class="select">
+              <select id="convert-to">
+                <option value="USD">USD - United States Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound Sterling</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Amount to Convert</label>
+          <div class="control">
+            <input id="amount-to-convert" class="input" type="number" placeholder="Enter amount">
+          </div>
+        </div>
+
+        <button id="convert-button" class="button is-primary">Convert</button>
+      </div>
+      <video src="./assets/185841-876533119_small.mp4" muted autoplay loop alt="a video of the sea"></video>
+      <div class="cover"></div>
+    </section>
+
+    <script src="./assets/script.js"></script>
   </body>
 </html>
