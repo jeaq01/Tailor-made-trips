@@ -1,4 +1,5 @@
 .section {
+    
     display: grid;
     justify-content: space-around;
     align-items: center;
@@ -33,3 +34,4 @@ video {
     opacity: 0.2;
     mix-blend-mode: overlay;
 }
+
