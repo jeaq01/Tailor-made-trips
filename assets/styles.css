@@ -1,5 +1,4 @@
 .section {
-    
     display: grid;
     justify-content: space-around;
     align-items: center;
@@ -33,7 +32,6 @@ video {
     background: #1c1c1d;
     opacity: 0.2;
     mix-blend-mode: overlay;
-<<<<<<< HEAD:assets/styles.css
     z-index: -1;
 }
 
@@ -48,7 +46,3 @@ video {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
 }
-=======
-}
-
->>>>>>> 74b2ec058b48b174a83e43f730ecf244e2ed53c0:assets/css/styles.css

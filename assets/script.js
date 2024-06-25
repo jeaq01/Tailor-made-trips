@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     async function getExchangeRates(baseCurrency) {
-        const apiKey = '09c3be0ed2759337a66d9309'; // API key valido por 2 semanas
+        const apiKey = '09c3be0ed2759337a66d9309'; // API key valido por dos semanas
         const response = await fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${baseCurrency}`);
         const data = await response.json();
         
