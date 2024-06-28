@@ -1,11 +1,13 @@
 $(document).ready(function () {
   const apiKey = 'vCw9Yk3R6SV4nTTFvABzK5c0op7GAbzD';
   const autocompleteUrl = 'https://api.tomtom.com/search/2/autocomplete/';
+  const searchBox = document.getElementById('search-box-container');
+  const recentSearches = localStorage.getItem('')
 
   // Event handler for input in the search box
   $('.tt-search-box-input').on('input', function () {
     const query = $(this).val();
-    if (query.length > 2) {
+    if (query.length > 0) {
       $.getJSON(`${autocompleteUrl}${query}.json`, {
         key: apiKey,
         typeahead: true,
