@@ -5,6 +5,8 @@ html, body {
 }
 .title {
   color: white;
+  justify-content: center;
+  display: flex;
 }
 
 .section {
@@ -50,6 +52,18 @@ html, body {
 #search-button {
   display: block;
   margin: 10px auto;
+  margin-right: 3px;
+}
+
+#recent-button {
+  display: block;
+  margin: 10px auto;
+  margin-left: 3px;
+}
+
+.wrap-button {
+  display: flex;
+  justify-content: space-around;
 }
 
 .currency-exchange-box {
