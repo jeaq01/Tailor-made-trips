@@ -44,6 +44,10 @@ html, body {
   z-index: 1;
 }
 
+.control {
+  max-width: 250px;
+}
+
 #search-box-container {
   max-width: 400px; /* Adjust width as needed */
   margin: 0 auto;
@@ -67,11 +71,13 @@ html, body {
 }
 
 .currency-exchange-box {
-  max-width: 400px; /* Adjust width as needed */
+  max-width: 265px; /* Adjust width as needed */
   margin: 20px auto;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.9); /* Optional: slight background for visibility */
+  background: rgba(63, 63, 63, 0.9); /* Optional: slight background for visibility */
   border-radius: 10px;
+  justify-content: center;
+  text-align: center;
 }
 
 .field {
