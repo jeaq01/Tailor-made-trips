@@ -1,6 +1,8 @@
 let recentSearches = JSON.parse(localStorage.getItem("recentSearches")) ?? [];
 
-const searchElement = document.getElementById("search-list");
+//const searchElement = document.getElementById("search-list");
+const recentButton = document.getElementById('search-button');
+const inputBox = document.getElementsByClassName('tt-search-box-input');
 
 function addRecentSearch(search) {
     recentSearches.push(search); // push adds to end
@@ -10,11 +12,16 @@ function addRecentSearch(search) {
 }
 
 // function that takes an html <ul> and fills it <li> elements
-function fillList(element) {
-    recentSearches.forEach(item => {
-        const ulItem = document.createElement('ul');
-        ulItem.textContent = item;
-        element.appendChild(ulItem);
-        console.log("Put " + item + " into " + element);
-    });
-}
+// function fillList(element) {
+//     recentSearches.forEach(item => {
+//         const ulItem = document.createElement('ul');
+//         ulItem.textContent = item;
+//         element.appendChild(ulItem);
+//         console.log("Put " + item + " into " + element);
+//     });
+// }
+
+recentButton.addEventListener('click', function() {
+    inputBox.textContent('testing');
+    console.log('testing');
+})
