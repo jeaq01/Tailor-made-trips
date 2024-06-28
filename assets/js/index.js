@@ -35,8 +35,8 @@ $(document).ready(function () {
     const city = $('.tt-search-box-input').val();
     if (city) {
       localStorage.setItem('selectedCity', city);
-      window.location.href = 'results.html';
       addRecentSearch(city);
+      window.location.href = 'results.html';
     } else {
       alert('Please enter a location');
     }
