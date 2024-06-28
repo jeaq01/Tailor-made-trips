@@ -36,6 +36,7 @@ $(document).ready(function () {
     if (city) {
       localStorage.setItem('selectedCity', city);
       window.location.href = 'results.html';
+      addRecentSearch(city);
     } else {
       alert('Please enter a location');
     }
