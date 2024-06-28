@@ -18,9 +18,3 @@ function fillList(element) {
         console.log("Put " + item + " into " + element);
     });
 }
-
-function awake() {
-    const test = document.getElementById('search-list');
-    fillList(test);
-}
-awake();
