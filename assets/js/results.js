@@ -27,8 +27,11 @@ $(document).ready(function () {
       selectedCategories.push($(this).data('category'));
     });
 
+    // Modified this block to show user error on screen (instead of alert box), if user does not select at least 1 poi
     if (selectedCategories.length === 0) {
-      alert('Please select at least one category');
+      const message = document.querySelector('message');
+      message.textContent = 'Please select at least one category';
+      message.style.color = 'red';
       return;
     }
 

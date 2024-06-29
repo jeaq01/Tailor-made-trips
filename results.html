@@ -9,7 +9,7 @@
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
     <meta charset="UTF-8" />
     <title>Points of Interest</title>
-    <link rel="stylesheet" href="assets/css/styles1.css" />
+    <link rel="stylesheet" href="assets/css/results.css" />
   </head>
   <body>
     <div class="container">
@@ -30,6 +30,8 @@
           <div class="poi-card" data-category="shopping">
             <img src="assets/images/shopping_icon.png" />SHOPPING
           </div>
+          <!-- Added this div to display an error if user does not select a POI -->
+          <div class="message"></div>
           <!-- Add more categories as needed -->
         </form>
         <button id="fetch-pois-button">Fetch Points of Interest</button>
