@@ -32,6 +32,13 @@ h3 {
   font-size: 3.5vh;
 }
 
+#category-shopping {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 #search-button {
   align-items: center;
   background-color: #666666;
@@ -86,6 +93,7 @@ li {
 ul {
   background: rgba(63, 63, 63, 0.9); /* Optional: slight background for visibility */
   border-radius: 10px;
+  
 }
 
 li:hover {
@@ -122,7 +130,7 @@ li:hover {
 
 #map {
   width: 100%;
-  height: 400px;
+  height: 40px;
 }
 
 #poi-results {
@@ -132,6 +140,7 @@ li:hover {
   justify-content: center;
   text-align: center;
   color: white;
+  
 }
 
 
