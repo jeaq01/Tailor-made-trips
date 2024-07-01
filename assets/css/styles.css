@@ -1,21 +1,32 @@
+
 html,
 body {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
   height: 100%;
   margin: 0;
   overflow: hidden;
 }
+
 .title {
-  color: white;
+  font-size: 3em;
   justify-content: center;
   display: flex;
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  color: rgb(0, 160, 175);
+  padding: 10px;
+  width: 100%
 }
 
+
+
 .section {
+  margin-top: 10%;
   position: relative;
   z-index: 1;
 }
 
 .video-background {
+  filter: brightness(1.45);
   position: absolute;
   top: 0;
   left: 0;
@@ -23,6 +34,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+
 }
 
 .cover {
@@ -35,7 +47,7 @@ body {
     0,
     0,
     0,
-    0.3
+    0.
   ); Optional: darken the video with a semi-transparent overlay
   z-index: 0;
 }
@@ -43,14 +55,22 @@ body {
 .container {
   position: relative;
   z-index: 1;
+  margin: auto;
+  width: 70%
 }
 
 .box,
 .field,
-.button,
-.title {
+.title
+{
   position: relative;
   z-index: 1;
+}
+
+.button{
+  background-color: rgb(117, 143, 144);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+
 }
 
 .control {
@@ -73,6 +93,7 @@ body {
 .tt-search-box-input-container  {
   border-radius: 10px;
   background-color: #fff;
+  opacity: .5;
 }
 
 #search-box-container textarea {
@@ -85,6 +106,7 @@ body {
   margin: 10px auto;
   margin-right: 3px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(117, 143, 144);
 }
 
 #recent-button {
@@ -97,6 +119,8 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+
 
 .currency-exchange-box {
   max-width: 265px; /* Adjust width as needed */
