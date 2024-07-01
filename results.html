@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
+    />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>Points of Interest</title>
+    <link rel="stylesheet" href="assets/css/styles1.css" />
+  </head>
+  <body>
+    <video class="video-background" src="./assets/images/185841-876533119_small.mp4" muted autoplay loop></video>
+    <div class="container">
+      <h1 id="city-name"></h1>
+      <!-- Dynamic City Name -->
+      <div id="poiModal" class="modal" style="display: block">
+        <!-- Show modal by default -->
+        <h3>Select Categories</h3>
+        <form id="poi-form">
+          <!-- Add your POI categories here -->
+          <div class="poi-card" data-category="hotel">
+            <img src="assets/images/hotel_icon.png" />
+          </div>
+          <div class="poi-card" data-category="restaurant">
+            <img src="assets/images/restaurant_icon.png" />
+          </div>
+          <div class="poi-card" data-category="shopping">
+            <img src="assets/images/shopping_icon.png" />
+          </div>
+          <!-- Add more categories as needed -->
+        </form>
+        <button id="fetch-pois-button">Fetch Points of Interest</button>
+      </div>
+      <div id="map" style="width: 100%; height: 400px; z-index: -1"></div>
+      <!-- Map container -->
+      <div id="poi-results"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/results.js"></script>
+  </body>
+</html>
