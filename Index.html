@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tailor-Made-Trips</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <video class="video-background" src="./assets/images/185841-876533119_small.mp4" muted autoplay loop></video>
+    <div class="cover"></div>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Tailor Made Trips</h1>
+        
+        <!-- Search Box -->
+        <div id="search-box-container"></div>
+        <div class="wrap-button">
+          <button id="search-button" class="button is-primary">Search</button>
+          <button id="recent-button" class="button is-primary">Recent</button>
+        </div>
+        
+        <!-- Currency Conversion -->
+        <div class="currency-exchange-box">
+          <div class="field">
+            <label class="label">Convert From</label>
+            <div class="control">
+              <div class="select">
+                <select id="convert-from">
+                  <option value="USD">USD - United States Dollar</option>
+                  <option value="EUR">EUR - Euro</option>
+                  <option value="GBP">GBP - British Pound Sterling</option>
+                  <option value="JPY">JPY - Japanese Yen</option>
+                  <option value="AUD">AUD - Australian Dollar</option>
+                  <option value="CAD">CAD - Canadian Dollar</option>
+                  <option value="CHF">CHF - Swiss Franc</option>
+                  <option value="CNY">CNY - Chinese Yuan</option>
+                  <option value="SEK">SEK - Swedish Krona</option>
+                  <option value="NZD">NZD - New Zealand Dollar</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Convert To</label>
+            <div class="control">
+              <div class="select">
+                <select id="convert-to">
+                  <option value="USD">USD - United States Dollar</option>
+                  <option value="EUR">EUR - Euro</option>
+                  <option value="GBP">GBP - British Pound Sterling</option>
+                  <option value="JPY">JPY - Japanese Yen</option>
+                  <option value="AUD">AUD - Australian Dollar</option>
+                  <option value="CAD">CAD - Canadian Dollar</option>
+                  <option value="CHF">CHF - Swiss Franc</option>
+                  <option value="CNY">CNY - Chinese Yuan</option>
+                  <option value="SEK">SEK - Swedish Krona</option>
+                  <option value="NZD">NZD - New Zealand Dollar</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Amount to Convert</label>
+            <div class="control">
+              <input id="amount-to-convert" class="input" type="number" placeholder="Enter amount">
+            </div>
+          </div>
+
+        <button id="convert-button" class="button is-primary">Convert</button>
+      </div>
+
+            <div id="search-list"></div>
+        </div>
+        <video src="./assets/185841-876533119_small.mp4" muted autoplay loop alt="a video of the sea"></video>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/search-storage.js"></script>    
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

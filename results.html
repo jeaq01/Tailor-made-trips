@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
+    />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Points of Interest</title>
+    <link rel="stylesheet" href="assets/css/results.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="city-name"></h1>
+      <!-- Dynamic City Name -->
+      <h3>Points of Interest</h3>
+      <div id="poiModal" class="modal" style="display: block">
+        <!-- Show modal by default -->
+        <h2>Select Categories</h2>
+        <form id="poi-form">
+          <!-- Add your POI categories here -->
+          <div class="poi-card" data-category="hotel">
+            <img src="assets/images/hotel_icon.png" />HOTELS
+          </div>
+          <div class="poi-card" data-category="restaurant">
+            <img src="assets/images/restaurant_icon.png" />RESTAURANTS
+          </div>
+          <div class="poi-card" data-category="shopping">
+            <img src="assets/images/shopping_icon.png" />SHOPPING
+          </div>
+          <!-- Added this div to display an error if user does not select a POI -->
+          <div class="message"></div>
+          <!-- Add more categories as needed -->
+        </form>
+        <button id="fetch-pois-button">View Options</button>
+      </div>
+      <div id="map" style="width: 100%; height: 400px"></div>
+      <!-- Map container -->
+      <div id="poi-results"></div>
+      <div id="favorites">
+        <h3>Favorites</h3>
+        <ul id="favorites-list"></ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/results.js"></script>
+  </body>
+</html>
